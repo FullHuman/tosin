@@ -10,7 +10,10 @@ program
   .action(() => {
     init()
       .then(() => process.exit(0))
-      .catch(() => process.exit(1))
+      .catch((e) => {
+        console.log(e)
+        process.exit(1)
+      })
   })
 
   program.parse(process.argv);

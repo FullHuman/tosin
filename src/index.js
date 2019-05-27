@@ -16,7 +16,7 @@ export const init = async () =>  {
     {
       type: 'input',
       name: 'projectName',
-      mesasge: 'What is the npm project name? (e.g. svelte-js)'
+      message: 'What is the npm project name? (e.g. svelte-js)'
     },
     {
       type: 'input',
@@ -35,7 +35,7 @@ export const init = async () =>  {
     }
   ])
   // clone the template library
-  const emmitter = degit('FullHuman/tosin-template-library', {
+  const emitter = degit('FullHuman/tosin-template-library', {
     cache: true,
     force: true,
     verbose: true
@@ -45,7 +45,7 @@ export const init = async () =>  {
     console.log(info.message)
   })
 
-  await emmitter.clone('.')
+  await emitter.clone('.')
 
   const replaceSets = [
     ['{% project name %}', response.projectName],
