@@ -1,16 +1,15 @@
-# Github Sponsors
+# Tosin
 
-[![Build Status](https://travis-ci.org/{% repository %}.svg?branch=master)]()
-[![CircleCi](https://circleci.com/gh/{% repository %}/tree/master.svg?style=shield)]()
-[![dependencies Status](https://david-dm.org/{% lowercase repository %}/status.svg)](https://david-dm.org/{% lowercase repository %})
-[![devDependencies Status](https://david-dm.org/{% lowercase repository %}/dev-status.svg)](https://david-dm.org/{% lowercase repository %}?type=dev)
+[![Build Status](https://travis-ci.org/FullHuman/tosin.svg?branch=master)]()
+[![CircleCi](https://circleci.com/gh/FullHuman/tosin/tree/master.svg?style=shield)]()
+[![dependencies Status](https://david-dm.org/fullhuman/tosin/status.svg)](https://david-dm.org/fullhuman/tosin)
+[![devDependencies Status](https://david-dm.org/fullhuman/tosin/dev-status.svg)](https://david-dm.org/fullhuman/tosin?type=dev)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![npm](https://img.shields.io/npm/v/{% project name %}.svg)](https://www.npmjs.com/package/{% project name %})
-[![license](https://img.shields.io/github/license/{% lowercase repository %}.svg)]()
+[![npm](https://img.shields.io/npm/v/tosin.svg)](https://www.npmjs.com/package/tosin)
+[![license](https://img.shields.io/github/license/fullhuman/tosin.svg)]()
 [![dependabot](https://img.shields.io/badge/dependabot-enabled-brightgreen.svg?style=plastic&logo=dependabot)]()
 
-
-## What is {% human project name %}?
+## What is Tosin?
 
 _Use this section to introduce your project. You can explain the goal of your project, why you created it, what are the use cases where it is useful._
 
@@ -19,7 +18,7 @@ _Use this section to introduce your project. You can explain the goal of your pr
 ### Installation
 
 ```
-npm install --save {% project name %}
+npm install --save tosin
 ```
 
 ### Usage
@@ -33,7 +32,7 @@ conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-{% human project name %} use [SemVer](http://semver.org/) for versioning.
+Tosin use [SemVer](http://semver.org/) for versioning.
 
 ## Acknowledgment
 

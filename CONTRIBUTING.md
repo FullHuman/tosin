@@ -5,7 +5,7 @@ Please read the text so that you understand how to conduct while contributing to
 
 ## Semantic Versioning
 
-{% project name %} use [SemVer](http://semver.org/) for versioning.
+tosin use [SemVer](http://semver.org/) for versioning.
 
 ## Documentation
 
@@ -15,7 +15,7 @@ The content of the documentation is in the docs repository.
 
 **Before submitting a pull request,** please make sure the following is done:
 
-1. Fork [the repository](https://github.com/{% repository %}) and create your branch from `master`.
+1. Fork [the repository](https://github.com/FullHuman/tosin) and create your branch from `master`.
 2. If you've added code that should be tested, add tests!
 3. If you've changed APIs, update the documentation.
 4. Ensure the test suite passes (`npm test`).
@@ -24,15 +24,15 @@ The content of the documentation is in the docs repository.
 
 ### Development Workflow
 
-After cloning {% project name %}, run `npm i` to fetch its dependencies.
+After cloning tosin, run `npm i` to fetch its dependencies.
 Then, you can run several commands:
 
-- `npm run dev` will build cjs and es module of {% project name %} in the `lib` folder and watch for changes.
+- `npm run dev` will build cjs and es module of tosin in the `lib` folder and watch for changes.
 - `npm run lint` checks the code style.
 - `npm test` runs the complete test suite.
 - `npm test -- --watch` runs an interactive test watcher.
 - `npm test <pattern>` runs tests with matching filenames.
-- `npm run build` creates the cjs and es module of {% project name %} in the `lib` folder.
+- `npm run build` creates the cjs and es module of tosin in the `lib` folder.
 
 Make sure that your pull request contains unit tests for any new functionality. This way we can ensure that we don't break your code in the future.
 

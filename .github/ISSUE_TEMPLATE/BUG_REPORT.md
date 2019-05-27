@@ -24,7 +24,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
  - OS: [e.g. Windows]
- - Version of {% human project name %} [e.g. 1.4.2]
+ - Version of Tosin [e.g. 1.4.2]
 
 **Additional context**
 Add any other context about the problem here.
