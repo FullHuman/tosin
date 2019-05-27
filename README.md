@@ -1,5 +1,6 @@
 # Tosin
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8099cb150353414ea484f27b595619fd)](https://app.codacy.com/app/florielfedry/tosin?utm_source=github.com&utm_medium=referral&utm_content=FullHuman/tosin&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/FullHuman/tosin.svg?branch=master)]()
 [![CircleCi](https://circleci.com/gh/FullHuman/tosin/tree/master.svg?style=shield)]()
 [![dependencies Status](https://david-dm.org/fullhuman/tosin/status.svg)](https://david-dm.org/fullhuman/tosin)
