@@ -5,14 +5,14 @@ export default {
     input: "src/index.js",
     output: [
         {
-            file: "lib/{% project name %}.es.js",
+            file: "lib/tosin.es.js",
             format: "es"
         },
         {
-            file: "lib/{% project name %}.cjs.js",
+            file: "lib/tosin.cjs.js",
             format: "cjs"
         }
     ],
     plugins: [builtins(), resolve()],
-    external: []
+    external: ['degit', 'enquirer', 'util', 'fs']
 }
