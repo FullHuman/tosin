@@ -1,0 +1,61 @@
+{
+  "name": "{% project name %}",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/{% project name %}.js",
+  "module": "./lib/{% project name %}.es.js",
+  "jsnext:main": "./lib/{% project name %}.es.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__",
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rollup -c rollup.config.js",
+    "prettier": "prettier --no-config --write '{src,__{tests,mocks}__}/**/*.js'",
+    "lint": "eslint src/",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{% repository %}.git"
+  },
+  "keywords": [
+    "github",
+    "sponsors",
+    "opencollective",
+    "community",
+    "bridge",
+    "ko-fi",
+    "tidelift",
+    "donate",
+    "donation",
+    "fundoss",
+    "npm"
+  ],
+  "author": "Ffloriel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/{% repository %}/issues"
+  },
+  "homepage": "https://github.com/{% repository %}#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "codacy-coverage": "^3.4.0",
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.1",
+    "rollup": "^1.12.3",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^5.0.0"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.2.0"
+  }
+}
