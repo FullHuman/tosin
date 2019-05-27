@@ -56,7 +56,7 @@ export const init = async () =>  {
     ['{% lowercase repository %}', response.repository.toLowerCase()]
   ]
 
-  ;[
+  const filesToModify = [
     '.github/ISSUE_TEMPLATE/BUG_REPORT.md',
     '.github/CODE_OF_CONDUCT.md',
     '.github/PULL_REQUEST_TEMPLATE.md',
@@ -66,9 +66,11 @@ export const init = async () =>  {
     'package.json',
     'README.md',
     'rollup.config.js'
-  ].forEach(file => {
-    replaceInFile(file, replaceSets)
-  })
+  ]
+
+  for (const file of filesToModify) {
+    await replaceInFile(file, replaceSets)
+  }
 }
 
 export const replaceInFile = async (filePath, replaceSets) => {
