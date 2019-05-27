@@ -1,6 +1,21 @@
 import fs from 'fs'
 import { promisify } from 'util'
-import { replaceInFile } from './../src/index'
+import { init, replaceInFile } from './../src/index'
+import enquirer from 'enquirer'
+
+jest.mock('enquirer', () => {
+  return {
+    prompt: jest.fn().mockImplementation(() => {
+      return {
+        humanProject: 'Awesome Tosin',
+        projectName: 'tosin',
+        repository: 'FullHuman/tosin',
+        developerName: 'Floriel Fedry',
+        email: 'truc@gmail.com'
+      }
+    })
+  }
+})
 
 const readFile = promisify(fs.readFile)
 const writeFile = promisify(fs.writeFile)
@@ -27,5 +42,24 @@ describe('test the library', () => {
     const actualFile = await readFile(testFilePath, 'utf-8')
 
     expect(actualFile).toBe(fileReadmeExpected)
+  })
+
+  it('initialize a project with tosin successfully', async () => {
+    enquirer.prompt = jest.fn().mockImplementation(() => {
+      return {
+        humanProject: 'Awesome Tosin',
+        projectName: 'tosin',
+        repository: 'FullHuman/tosin',
+        developerName: 'Floriel Fedry',
+        email: 'truc@gmail.com'
+      }
+    })
+
+    // change the directory
+    process.chdir('__tests__/integration_result/')
+
+    // await init()
+    // check if Readme file exists and does not contain template variable
+
   })
 })
