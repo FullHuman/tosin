@@ -47,7 +47,7 @@ describe('test the library', () => {
   it('initialize a project with tosin successfully', async () => {
     enquirer.prompt = jest.fn().mockImplementation(() => {
       return {
-        humanProject: 'Awesome Tosin',
+        humanProjectName: 'Awesome Tosin',
         projectName: 'tosin',
         repository: 'FullHuman/tosin',
         developerName: 'Floriel Fedry',
@@ -58,8 +58,11 @@ describe('test the library', () => {
     // change the directory
     process.chdir('__tests__/integration_result/')
 
-    // await init()
+    await init()
     // check if Readme file exists and does not contain template variable
-
+    const readme = await readFile('README.md', 'utf-8')
+    expect(readme.includes('{%')).toBe(false)
+    expect(readme.includes('%}')).toBe(false)
+    expect(readme.includes('Awesome Tosin')).toBe(true)
   })
 })

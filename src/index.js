@@ -36,7 +36,7 @@ export const init = async () =>  {
   ])
   // clone the template library
   const emitter = degit('FullHuman/tosin-template-library', {
-    cache: true,
+    cache: false,
     force: true,
     verbose: false
   })

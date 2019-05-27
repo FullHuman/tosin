@@ -1,4 +1,5 @@
 __tests__/fixtures/filesReplacement/test.md
+__tests__/integration_result/
 
 # Logs
 logs
