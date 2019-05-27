@@ -24,17 +24,13 @@
     "url": "git+https://github.com/FullHuman/tosin.git"
   },
   "keywords": [
+    "project",
+    "scaffolding",
     "github",
-    "sponsors",
-    "opencollective",
-    "community",
-    "bridge",
-    "ko-fi",
-    "tidelift",
-    "donate",
-    "donation",
-    "fundoss",
-    "npm"
+    "npm",
+    "package",
+    "library",
+    "init"
   ],
   "author": "Ffloriel",
   "license": "MIT",
