@@ -11,6 +11,10 @@
 [![license](https://img.shields.io/github/license/fullhuman/tosin.svg)]()
 [![dependabot](https://img.shields.io/badge/dependabot-enabled-brightgreen.svg?style=plastic&logo=dependabot)]()
 
+<p align="center">
+	<img src="https://imgur.com/lVaCXkU.png" height="200" width="200" alt="Tosin logo"/>
+</p>
+
 ## What is Tosin?
 
 Tosin is an opinionated way to start the creation of an npm package. It comes with everything included, from CI to a documentation website. Below is a list of its features.
