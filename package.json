@@ -10,6 +10,10 @@
     "test": "__tests__",
     "doc": "docs"
   },
+  "files": [
+    "lib/",
+    "bin/"
+  ],
   "scripts": {
     "test": "jest",
     "dev": "rollup -c rollup.config.js -w",
