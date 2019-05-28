@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: 
+heroImage: https://imgur.com/lVaCXkU.png
 actionText: Get Started →
 actionLink: /Guide.html
 features:
