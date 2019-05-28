@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Tosin',
-  description: '',
+  description: 'Initialize a npm package with everything included, from CI to documentation website',
   base: '/tosin/',
   themeConfig: {
     nav: [

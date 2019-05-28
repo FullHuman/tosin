@@ -1,7 +1,7 @@
 {
   "name": "tosin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Initialize a npm package with everything included, from CI to documentation website",
   "main": "./lib/tosin.js",
   "module": "./lib/tosin.es.js",
   "jsnext:main": "./lib/tosin.es.js",
