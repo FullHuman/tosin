@@ -10,23 +10,23 @@ Continuous integration is useful to keep an eye of the status of your repository
 You can do all of that manually of course but with external contributors and pull requests, you want a way to automate the process.
 
 Tosin comes with a simple configuration for circleci and one for Travis-ci.
-- CircleCi will build the package with npm install, lint to make sure there is no code that is error-prone, and run the test. Take a look at the `Next Steps` section on how to add code coverage on the master branch.
-- Travis configuration will only test your package with another version of Nodejs. You can see it as a backup in case CircleCI as a problem preventing it from building your package. You can also easily understand if your build failed the test by looking at the Travis status. Since CircleCI is doing more, it can fail even though your tests pass with success.
+- CircleCi will build the package with npm install, lint to make sure there is no code that is error-prone and run the test. Take a look at the `Next Steps` section on how to add code coverage on the master branch.
+- Travis configuration will only test your package with another version of Nodejs. You can see it as a backup in case of CircleCI as a problem preventing it from building your package. You can also easily understand if your build failed the test by looking at the Travis status. Since CircleCI is doing more, it can fail even though your tests pass with success.
 
-You want to replace all of that with GitHub Actions? Take a look at the section `GitHub Actions` below.
+Do you want to replace all of that with GitHub Actions? Take a look at the section `GitHub Actions` below.
 
 ### Linter + Prettier
 
 [Eslint](https://eslint.org/) is used for linting.
-> ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs. 
+> ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making the code more consistent and avoiding bugs. 
 
 [Prettier](https://prettier.io/) is used to format the code.
 > Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
 
 ### Testing Framework Jest
 
-Jest is one of the most popular testing framework for Javascript. Contrary to other testing framework, Jest includes assertions library and mocking inside its framework.
-> Jest is a JavaScript testing framework designed to ensure correctness of any JavaScript codebase. It allows you to write tests with an approachable, familiar and feature-rich API that gives you results quickly.
+Jest is one of the most popular testing frameworks for Javascript. Contrary to other testing frameworks, Jest includes assertions library and mocking inside its framework.
+> Jest is a JavaScript testing framework designed to ensure the correctness of any JavaScript codebase. It allows you to write tests with an approachable, familiar and feature-rich API that gives you results quickly.
 
 ### GitHub files for the community
 
@@ -47,17 +47,17 @@ A [code of conduct](https://www.contributor-covenant.org/) is present to make su
 
 Do you want to provide autocompletion when someone installed your package? If you do, the `types/index.d.ts` is ready to be completed.
 It is set in `package.json` as the file containing your types. Most of the IDE and code editor will use this file to provide auto-completion.
-It is a great way to improve developer experience.
+It is a great way to improve the developer experience.
 
 ### Documentation website ready to be deployed
 
-GitHub offers the possibility of hosting a website per repository since a long time now. You can take advantage of that to create a documentation website for your package and hosting it directly on GitHub.
+GitHub offers the possibility of hosting a website per repository for a long time now. You can take advantage of that to create a documentation website for your package and hosting it directly on GitHub.
 
 Tosin comes with [vuepress](https://vuepress.vuejs.org/) and a script to deploy the website to GitHub Pages. The script will deploy the files to the gh-pages branch of your repository.
 
 ## Installation
 
-Tosin doesn't required installation as it is meant to be a simple CLI tool. 
+Tosin doesn't require installation as it is meant to be a simple CLI tool. 
 
 However, you can still choose to install it if you want to use its Javascript API.
 
@@ -91,13 +91,13 @@ You will be prompted a series of questions. The answers will be used to generate
 
 ### Next steps
 
-Once you initialize your project with Tosin, there's still a few steps to take.
+Once you initialize your project with Tosin, there are still a few steps to take.
 
 - Go to [circleci website](https://circleci.com) to add your project.
 - Go to [travis-ci website](https://travis-ci.org/) to add your project.
 - Go to [dependabot website](https://dependabot.com/) to add your project.
 - Modify the `package.json` file and add a description, keywords and your GitHub username as the author.
-- Choose a code coverage solution and add it to the project. You can find an example with [codacy](https://www.codacy.com/) in the `.circleci/config.yml` file. Add the badges as well to your Readme, they will be fetch by npm to calculate the quality score of your package.
+- Choose a code coverage solution and add it to the project. You can find an example with [codacy](https://www.codacy.com/) in the `.circleci/config.yml` file. Add the badges as well to your Readme, they will be fetched by npm to calculate the quality score of your package.
 
 ## Use GitHub Actions
 
