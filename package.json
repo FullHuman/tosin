@@ -1,10 +1,11 @@
 {
   "name": "tosin",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Initialize a npm package with everything included, from CI to documentation website",
   "main": "./lib/tosin.js",
   "module": "./lib/tosin.es.js",
   "jsnext:main": "./lib/tosin.es.js",
+  "bin": "./bin/tosin.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__",
@@ -55,6 +56,7 @@
     "vuepress": "^0.14.11"
   },
   "dependencies": {
+    "commander": "^2.20.0",
     "degit": "^2.1.3",
     "enquirer": "^2.3.0"
   },
