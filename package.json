@@ -56,7 +56,7 @@
     "vuepress": "^0.14.11"
   },
   "dependencies": {
-    "commander": "^2.20.0",
+    "commander": "^3.0.1",
     "degit": "^2.1.3",
     "enquirer": "^2.3.0"
   },
