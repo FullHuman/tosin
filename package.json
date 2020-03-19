@@ -53,7 +53,7 @@
     "rollup": "^1.12.3",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-resolve": "^5.0.0",
-    "vuepress": "^0.14.11"
+    "vuepress": "^1.4.0"
   },
   "dependencies": {
     "commander": "^3.0.2",
