@@ -50,7 +50,7 @@
     "eslint": "^6.5.1",
     "jest": "^24.8.0",
     "prettier": "^1.17.1",
-    "rollup": "^1.12.3",
+    "rollup": "^2.3.2",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-resolve": "^5.0.0",
     "vuepress": "^0.14.11"
