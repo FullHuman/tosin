@@ -48,7 +48,7 @@
     "@babel/preset-env": "^7.4.5",
     "codacy-coverage": "^3.4.0",
     "eslint": "^6.5.1",
-    "jest": "^24.8.0",
+    "jest": "^25.5.0",
     "prettier": "^1.17.1",
     "rollup": "^1.12.3",
     "rollup-plugin-node-builtins": "^2.1.2",
